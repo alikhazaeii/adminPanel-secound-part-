@@ -1,9 +1,18 @@
 
+
 const search: HTMLInputElement = document.getElementById('search') as HTMLInputElement;
+
+
+
 console.log(search);
+
+
 const main: HTMLElement = document.querySelector('main') as HTMLElement
+
 interface form {
+  
   id: string
+  
   name: string;
   lastname: string;
   email: string;
@@ -21,6 +30,8 @@ search.addEventListener('keyup', () => {
   name.forEach(val => {
 
 
+
+    
     const nameText = val.textContent?.toLowerCase()
     if (nameText && nameText.indexOf(searchInput) >= 0) {
       if (val.parentElement) {
@@ -34,26 +45,13 @@ search.addEventListener('keyup', () => {
     }
   })
 })
-// search.addEventListener('keyup', () => {
-//   let searchInput: string = search.value.toLowerCase();
 
-//   // انتخاب همه li‌ها داخل ul
-//   const name = document.querySelectorAll('ul > li:nth-of-type(2)') as NodeListOf<HTMLElement>;
 
-//   name.forEach(val => {
-//     const nameText = val.textContent?.toLowerCase();
 
-//     if (nameText && nameText.indexOf(searchInput) >= 0) {
-//       if (val.parentElement) {
-//         val.parentElement.style.display = 'block'; // نمایش آیتم‌هایی که متن جستجو را شامل می‌شوند
-//       }
-//     } else {
-//       if (val.parentElement) {
-//         val.parentElement.style.display = 'none'; // مخفی کردن آیتم‌هایی که متن جستجو را شامل نمی‌شوند
-//       }
-//     }
-//   });
-// });
+
+
+
+
 
 
 fetch('https://673fa428a9bc276ec4b93059.mockapi.io/signupform', {
@@ -77,7 +75,16 @@ fetch('https://673fa428a9bc276ec4b93059.mockapi.io/signupform', {
       `;
       main.appendChild(ul)
     });
+    
   })
+  
   .catch(error => {
+    
     console.error('Error:', error);
   });
+
+
+
+
+
+
