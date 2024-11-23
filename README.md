@@ -1,7 +1,7 @@
 # adminPanel-secound-part-
 [demo](https://alikhazaeii.github.io/adminPanel-secound-part-/)
 
-<h2>after biuld tscongif.ts
+<h2>after biuld tscongif.jason
 </h2>
 <h3>typescript compile with javascript in vs terminal :</h3>
 <h3>npm install -g typescript
