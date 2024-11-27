@@ -37,7 +37,7 @@ fetch('https://673fa428a9bc276ec4b93059.mockapi.io/signupform/', {
       <img src="asset/img/avatar.png" alt="">
       </figure>
     
-        <li> ${val.id} ${val.name} ${val.lastname}</li>
+        <li>ID:  ${val.id} ${val.name} ${val.lastname}</li>
         <li> AGE: ${val.age}</li>
         <li> ${val.email}</li>
         <li> ${val.date}</li>
